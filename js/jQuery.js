@@ -5,16 +5,6 @@ $(document).on("pagecreate", function () {
     $("#map").css("height", altura - $("nav").height());
 
 
-    var filtros = ["um", "dois", "tres"];
-    var output = "";
-
-    for (var i in filtros) {
-        output += "<p><a>" + filtros[i] + "</a></p>";
-    }
-
-    document.getElementById("myFilters").innerHTML = output;
-
-
     $(document).on('click', '.btCad', function(){
         $("#lpLogin").css("display", "none");
         $("#lpCadastro").css("display", "block");
@@ -25,4 +15,9 @@ $(document).on("pagecreate", function () {
         $("#lpCadastro").css("display", "none");
     });
 
+     $.getJSON('json/filtros.json', function (filtros) {
+        for (var i in filtros) {
+            $("#myFilters").append("<p><a href='#;return(false)'>" + filtros[i] + "</a></p>");
+        }
+    });
 });
