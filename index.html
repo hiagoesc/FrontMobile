@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="js/jQuery/jquery-1.10.2.js"></script>
+        <script src="js/jQuery/jquery-1.11.3.min.js"></script>
+        <script src="js/jQuery/jquery.mobile-1.4.5.min.js"></script>
+        
+        <!-- Angular JS -->
+            <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <!-- Angular JS -->
+
+        <script src="js/jQuery.js"></script>
+        <script src="js/Maps.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/StyleSheet.css">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        
+         <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+        <title>Denuncia.se</title>
+
+    </head>
+    <body>
+        <div data-role="page" id="pageone">
+        
+            <!-- PAGINA DE PERFIL E CONFIGURAÇÕES -->
+                
+                <section id="leftPage" data-role="panel" data-position="left">
+                    <div id="conteudo">
+                        <a href="#pageone" data-rel="close" class="ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-right"></a>
+                        <br/>
+
+                        <!-- Proxima div contera o formulario de login, e o botao de cadastro-->
+                        <div id="lpLogin">
+                            
+                            <form>
+                                <table>
+                                    <tr>
+                                        <td colspan="2"><img id="imgPerfil" src="css/img/icon-profile.png" alt="imagem de perfil"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><input type="text" placeholder="Login" name="txtLogin"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><input type="text" placeholder="Senha" name="txtSenha"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="true" name="sOn"></td>
+                                        <td id="checkBox">Manter Conectado?</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><input type="submit" onclick="return(false);" value="Login"></td>
+                                    </tr>
+                                </table>
+                            </form>
+                        
+                            <br/>
+                            <div id="erros">
+                                
+                            </div>
+                            <button class="btCad">Cadastrar</button>
+                        </div>
+
+                        <!--DIV que contem o formulario de cadastro-->
+                        <div id="lpCadastro">
+                            <form>
+                                <table>
+                                        <tr>
+                                            <td colspan="2"><img id="imgPerfil" src="css/img/icon-profile.png" alt="imagem de perfil"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><input type="text" placeholder="Login" name="txtLogin"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><input type="text" placeholder="Senha" name="txtSenha"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><input type="text" placeholder="Email" name="txtEmail"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><input type="submit" onclick="return(false);" value="Cadastrar"></td>
+                                        </tr>
+                                </table>
+                            </form>
+                            
+                            <div id="erros">
+                                
+                            </div>
+
+                            <table>
+                                    <tr>
+                                        <td><button class="clrCad">Cancelar</button></td>
+                                    </tr>
+                            </table>
+
+                        </div>
+
+                        
+                    </div>
+                </section>
+
+            <!-- PAGINA DE PERFIL E CONFIGURAÇÕES -->
+
+            <!-- MAPA -->
+
+                <section id="maps" data-role="main" class="ui-content">
+                    <header data-role="header">
+                        <nav>
+                            <ul>
+                                <li id="exLeft"><a href="#leftPage" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext">Profile</a></li>
+                                <li id="logo"><img src="css/img/logo/logoMobile.png" alt="logo"></li>
+                                <li id="exRight"><a href="#rightPage" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext">Filters</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                            <div id="map"></div>
+                            <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+                                    async defer></script>
+
+                    <div id="btnDenuncia">
+                        <span>Denuncie</span>
+                    </div>
+                </section>
+
+            <!-- MAPA -->
+
+            <!-- PAGINA DE FILTROS -->
+                        
+                <section id="rightPage" data-role="panel" data-position="right">
+                    <div id="conteudo">
+                        <a href="#pageone" data-rel="close" class="ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-left"></a>
+
+                        <div>
+                            <div data-role="collapsible-set">
+                                <div data-role="collapsible" data-collapsed="false" data-inset="true">
+                                    <h1>Filtros</h1>
+                                    
+                                    <div id="myFilters">
+                                        
+                                    </div>
+
+                                </div>
+
+                                <!-- Outras Abas podem ser colocadas seguindo este padrão
+                                    <div data-role="collapsible" data-collapsed="true" data-inset="true">
+                                        <h1>Mais</h1>
+                                        <p>Crimes</p>
+                                        <p>Outros</p>  
+                                    </div>
+                                -->
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            
+            <!-- PAGINA DE FILTROS -->
+
+        </div>
+    </body>
+</html>
