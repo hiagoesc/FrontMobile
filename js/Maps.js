@@ -21,6 +21,7 @@ function initMap(){
 		handleLocationError(false, map, icon);
 	}
 }
+//Joao gostoso
 
 function handleLocationError(browserHasGeolocation, map, icon) {
 	var pos = {
