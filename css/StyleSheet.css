@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav{
+    text-align: center;
+    height: 50px;
+    padding: 0 5px 0 5px;
+}
+
+nav ul li{
+    display: inline;
+}
+
+    #logo{        margin-top: 0px;
+        width: 50px;
+    }
+        #logo img{
+            margin-top: 5px;
+        }
+    #exLeft{
+        margin-top: 10px;
+        float: left;
+    }
+
+    #exRight{
+    margin-top: 10px;
+        float: right;
+    }
+
+nav .ui-btn{
+    margin: 0 5px 0 5px;
+    height: 25px;
+    width: 25px;
+}
+
+#btnDenuncia{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#btnDenuncia span{
+    color: #fff;
+    text-align: center;
+    background-color: #f00;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+section{
+    padding: 0;
+    margin: 0;
+    line-height: normal;
+}
+
+#maps{
+    width: 100%;
+    float: left;
+    padding: 0;
+    overflow: hidden;
+}
+
+#conteudo{
+    margin-top: -20px;
+    overflow: hidden auto;
+}
+
+#lpLogin{
+    text-align: center;
+    display: block;
+}
+    #imgPerfil{
+        width: 100px;
+        background-color: #000;
+        border-radius: 100%;
+    }
+    #checkBox{
+        font-size: 15px;
+        padding-top: 3px;
+    }
+
+#lpCadastro{
+    display: none;
+    text-align: center;
+}
+
+#clrCad{
+    width: 50px;
+}
