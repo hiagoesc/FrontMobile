@@ -1,5 +1,5 @@
 function initMap(){
-    var joaoGostoso;
+    var joaoGostoso = "oi";
     var map = new google.maps.Map(document.getElementById('map'), {zoom: 20});
 
 	var icon = new google.maps.MarkerImage("http://maps.google.com/mapfiles/ms/micons/blue.png",new google.maps.Size(32, 32), new google.maps.Point(0, 0),new google.maps.Point(16, 32));
